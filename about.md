@@ -1,1 +1,1 @@
-Curious precise builder
+Curious meticulous creative
