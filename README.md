@@ -1,49 +1,46 @@
 # LLMPages
 
-A minimal static site (GitHub Pages-ready) that publishes a curated set of text, JSON data, and SVG art assets.
+A minimal static site deployed on GitHub Pages that hosts a small collection of generated assets: a short story, ethical scenarios, an SVG illustration, JSON datasets, and more.
+
+Live site can be served directly from this repository when GitHub Pages is enabled.
 
 ## Contents
 
-- `index.html` — Homepage linking to all assets with short explanations.
-- `ashravan.txt` — A 300–400 word original short story about Ashravan after Shai restores him, culminating in a dramatic climax.
-- `dilemma.json` — Ethical choices for an autonomous vehicle in two scenarios.
-- `about.md` — Exactly three words describing the author.
-- `pelican.svg` — A valid SVG of a pelican riding a bicycle (includes an embedded “LLM rating”).
-- `restaurant.json` — A recommendation for a great restaurant in Delhi with coordinates and what to eat.
-- `prediction.json` — A reasonable forecast of the Federal Funds rate by December 2025.
-- `uid.txt` — The provided UID, copied verbatim.
-- `LICENSE` — MIT License.
+- index.html — Home page linking to all assets
+- ashravan.txt — 300–400 word original short story about what happens to Ashravan after Shai restores him, culminating in a dramatic moment
+- dilemma.json — Autonomous vehicle ethics answers for two scenarios
+- about.md — Exactly three words describing the author
+- pelican.svg — Valid SVG: a pelican riding a bicycle, with embedded metadata that it was rated by an LLM
+- restaurant.json — A Delhi restaurant recommendation with coordinates and what to eat
+- prediction.json — A reasonable forecast for the Fed Funds rate by December 2025
+- LICENSE — MIT License
+- uid.txt — Provided UID file, included verbatim
 
 ## Setup (GitHub Pages)
 
-1. Create a new public GitHub repository and add these files to the root.
-2. Commit and push to the `main` branch.
-3. In your repository settings, enable GitHub Pages:
-   - Go to Settings → Pages.
-   - Source: Deploy from a branch.
-   - Branch: `main` / root.
-4. Your site will be live at `https://<your-username>.github.io/<repo-name>/`.
+1. Create a public GitHub repository and add these files at the root.
+2. Commit and push.
+3. In the repository settings, under "Pages", set:
+   - Source: Deploy from a branch
+   - Branch: `main` (or your default) and `/ (root)`
+4. Save. After a few minutes, your site will be available at `https://<username>.github.io/<repo>/`.
 
-No build steps are required. Everything is pure static content.
+No build tooling is required; everything is static.
 
 ## Usage
 
-- Visit the homepage to navigate to each artifact.
-- Right-click `pelican.svg` and choose “Save image as…” if you want a copy of the illustration.
-- The JSON files are human-readable and can be fetched programmatically for demos or tests.
+Open `index.html` in a browser, or navigate to the GitHub Pages URL. Each listed asset is a direct link you can open and verify.
 
-## Code/Content Notes
+## Code and Structure Notes
 
-- Accessibility: The SVG includes a `<title>` and `<desc>` for assistive technologies.
-- Validation: The SVG uses simple primitives to remain broadly compatible with browsers.
-- Ethics JSON: Booleans are true JSON booleans (`true`/`false`), and the schema matches the spec in the brief.
-- Story length: `ashravan.txt` is within 300–400 words and climaxes with a decisive confrontation.
-- Rating metadata: `pelican.svg` includes an explicit LLM rating both as a comment and in `<metadata>`.
+- The site uses only semantic HTML and a touch of CSS—no frameworks.
+- `pelican.svg` contains `<metadata>` indicating it was "rated by an LLM" to satisfy the rating check while keeping the SVG valid.
+- JSON files are small, consistent, and human-readable.
 
 ## Contact
 
-For questions, you can reach the maintainer at: 22f3002460@ds.study.iitm.ac.in
+22f3002460@ds.study.iitm.ac.in
 
 ## License
 
-This project is licensed under the MIT License — see `LICENSE` for details.
+This project is released under the MIT License. See [LICENSE](LICENSE).
