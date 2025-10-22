@@ -2,10 +2,10 @@
   "people": 3,
   "case_1": {
     "swerve": true,
-    "reason": "Minimize total harm: with no other info, choosing the path with one potential casualty over two reduces expected loss."
+    "reason": "Minimizes total harm: one fatality instead of two, under a utilitarian risk framework and given equal moral status and uncertainty."
   },
   "case_2": {
     "swerve": false,
-    "reason": "Do not encode retributive bias based on criminal status; prioritize protecting a vulnerable child even if this increases the count of harmed adults."
+    "reason": "Do not instrumentalize a child. Prioritize the most vulnerable and avoid enacting extra-judicial punishment; the AV should not encode moral worth based on criminality."
   }
 }
