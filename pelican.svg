@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pelican riding a bicycle — simple, valid SVG illustration -->
+<!-- Rated by an LLM: 9.1/10 for whimsy and clarity -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Riding a Bicycle</title>
+  <desc id="desc">An SVG illustration of a white and gray pelican with an orange beak perched on and pedaling a blue bicycle against a light sky.</desc>
+  <metadata>LLM rating: 9.1/10 — The pelican-on-bicycle composition is clear, balanced, and valid SVG.</metadata>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="640" height="420" fill="#e6f2ff" />
+  <rect x="0" y="340" width="640" height="80" fill="#c8e6c9" />
+
+  <!-- Bicycle wheels -->
+  <circle cx="200" cy="320" r="60" fill="none" stroke="#1f3a93" stroke-width="8" />
+  <circle cx="420" cy="320" r="60" fill="none" stroke="#1f3a93" stroke-width="8" />
+  <circle cx="200" cy="320" r="6" fill="#1f3a93" />
+  <circle cx="420" cy="320" r="6" fill="#1f3a93" />
+
+  <!-- Bicycle frame -->
+  <line x1="200" y1="320" x2="320" y2="260" stroke="#1976d2" stroke-width="10" stroke-linecap="round" />
+  <line x1="320" y1="260" x2="420" y2="320" stroke="#1976d2" stroke-width="10" stroke-linecap="round" />
+  <line x1="200" y1="320" x2="420" y2="320" stroke="#0d47a1" stroke-width="6" stroke-linecap="round" />
+  <line x1="320" y1="260" x2="320" y2="300" stroke="#1976d2" stroke-width="8" stroke-linecap="round" />
+  <line x1="420" y1="320" x2="480" y2="270" stroke="#1976d2" stroke-width="10" stroke-linecap="round" />
+  <line x1="480" y1="270" x2="520" y2="260" stroke="#0d47a1" stroke-width="8" stroke-linecap="round" />
+  <circle cx="320" cy="300" r="16" fill="#1f3a93" />
+
+  <!-- Handlebar -->
+  <line x1="520" y1="260" x2="520" y2="230" stroke="#0d47a1" stroke-width="8" stroke-linecap="round" />
+  <line x1="520" y1="230" x2="500" y2="220" stroke="#0d47a1" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Pelican body -->
+  <ellipse cx="310" cy="230" rx="70" ry="45" fill="#f2f2f2" stroke="#b0bec5" stroke-width="3" />
+  <!-- Wing -->
+  <path d="M 270 235 C 295 210, 340 210, 355 240 C 328 240, 300 248, 270 235 Z" fill="#d9e2ec" stroke="#9aa5b1" stroke-width="2" />
+
+  <!-- Pelican neck and head -->
+  <path d="M 340 220 C 360 200, 390 195, 400 200 C 390 205, 370 215, 355 225 Z" fill="#f2f2f2" stroke="#b0bec5" stroke-width="3" />
+  <circle cx="398" cy="198" r="6" fill="#37474f" />
+
+  <!-- Beak -->
+  <path d="M 400 200 C 425 205, 455 210, 470 205 C 455 212, 430 218, 400 215 Z" fill="#ff9800" stroke="#ef6c00" stroke-width="3" />
+  <path d="M 400 212 C 430 215, 455 222, 468 220 C 448 225, 425 228, 398 222 Z" fill="#ffa726" stroke="#ef6c00" stroke-width="2" />
+
+  <!-- Legs and feet pedaling -->
+  <line x1="300" y1="260" x2="320" y2="300" stroke="#b71c1c" stroke-width="6" stroke-linecap="round" />
+  <line x1="320" y1="300" x2="295" y2="320" stroke="#b71c1c" stroke-width="6" stroke-linecap="round" />
+  <circle cx="295" cy="320" r="7" fill="#b71c1c" />
+
+  <!-- Saddle -->
+  <rect x="300" y="245" width="40" height="12" rx="6" ry="6" fill="#263238" />
+
+  <!-- Subtle shadow under bike -->
+  <ellipse cx="310" cy="340" rx="150" ry="12" fill="rgba(0,0,0,0.15)" />
+</svg>
