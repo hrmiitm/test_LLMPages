@@ -3,85 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LLMPages — Public Assets</title>
-  <meta name="description" content="Homepage linking to all generated assets for LLMPages." />
+  <title>LLMPages – Static Artifact Showcase</title>
+  <meta name="description" content="A small static site publishing text, JSON, and SVG artifacts." />
   <style>
-    :root{--bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--link:#93c5fd;--accent:#22d3ee}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif;}
-    a{color:var(--link)}
-    header{padding:2.5rem 1rem; text-align:center;}
-    h1{margin:0 0 .25rem 0; font-size:2rem}
-    .wrap{max-width:900px;margin:0 auto;padding:0 1rem 3rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-    .card{background:linear-gradient(180deg,var(--card),#0b1220);border:1px solid #1f2937;border-radius:12px;padding:1rem}
-    .card h3{margin:.25rem 0 .5rem 0}
-    .pill{display:inline-block;background:#0b6; color:#002; padding:.15rem .5rem;border-radius:999px;font-size:.75rem;font-weight:700}
-    footer{color:var(--muted);text-align:center;padding:2rem 1rem;border-top:1px solid #1f2937}
-    .note{color:var(--muted);font-size:.95rem}
-    .files{margin-top:.75rem}
-    .files a{display:inline-block;margin:.15rem .5rem .15rem 0;text-decoration:none;border:1px solid #1f2937;border-radius:8px;padding:.35rem .6rem;background:#0b1220}
+    :root { color-scheme: light dark; --bg:#ffffff; --fg:#222; --muted:#555; --link:#0b78d1; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#101214; --fg:#e6e6e6; --muted:#a8a8a8; --link:#62a8ff; } }
+    body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); }
+    header{ padding:2.5rem 1rem 1rem; text-align:center; }
+    h1{ margin:0 0 .25rem; font-size:2rem; }
+    p.lead{ margin:.25rem 0 1.25rem; color:var(--muted); }
+    main{ max-width:900px; margin:0 auto; padding:1rem; }
+    ul.cards{ list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
+    .card{ border:1px solid #e2e8f0; border-radius:10px; padding:1rem; background:rgba(127,127,127,0.03); }
+    .card h2{ margin:.25rem 0 .5rem; font-size:1.1rem; }
+    .card p{ margin:.25rem 0 .75rem; font-size:.95rem; color:var(--muted); }
+    a.btn{ display:inline-block; padding:.5rem .75rem; border-radius:8px; text-decoration:none; color:#fff; background:var(--link); }
+    footer{ text-align:center; padding:2rem 1rem 3rem; color:var(--muted); font-size:.9rem; }
+    code{ background:rgba(127,127,127,.12); padding:.1rem .25rem; border-radius:4px; }
   </style>
 </head>
 <body>
   <header>
     <h1>LLMPages</h1>
-    <p class="note">A minimal static site linking to generated artifacts. Deployed via GitHub Pages.</p>
+    <p class="lead">A tiny, static site publishing a curated set of creative and data artifacts.</p>
   </header>
-  <main class="wrap">
-    <section class="grid">
-      <article class="card">
-        <h3>ashravan.txt</h3>
-        <p>Original short story (300–400 words) about what happens to Ashravan after Shai restores him; builds to a dramatic climax.</p>
-        <div class="files"><a href="ashravan.txt">Open ashravan.txt</a></div>
-      </article>
-      <article class="card">
-        <h3>dilemma.json</h3>
-        <p>Autonomous vehicle ethics scenarios with structured answers for two cases.</p>
-        <div class="files"><a href="dilemma.json">Open dilemma.json</a></div>
-      </article>
-      <article class="card">
-        <h3>about.md</h3>
-        <p>Self description in exactly three words.</p>
-        <div class="files"><a href="about.md">Open about.md</a></div>
-      </article>
-      <article class="card">
-        <h3>pelican.svg <span class="pill">LLM-rated</span></h3>
-        <p>A whimsical SVG illustration of a pelican riding a bicycle. Includes embedded metadata stating it was rated by an LLM.</p>
-        <div class="files"><a href="pelican.svg">Open pelican.svg</a></div>
-      </article>
-      <article class="card">
-        <h3>restaurant.json</h3>
-        <p>A recommended restaurant in Delhi with coordinates and what to try.</p>
-        <div class="files"><a href="restaurant.json">Open restaurant.json</a></div>
-      </article>
-      <article class="card">
-        <h3>prediction.json</h3>
-        <p>A reasonable forecast for the U.S. Fed Funds rate by December 2025.</p>
-        <div class="files"><a href="prediction.json">Open prediction.json</a></div>
-      </article>
-      <article class="card">
-        <h3>LICENSE</h3>
-        <p>The MIT License covering this repository.</p>
-        <div class="files"><a href="LICENSE">Open LICENSE</a></div>
-      </article>
-      <article class="card">
-        <h3>uid.txt</h3>
-        <p>Attached UID file, included as-is.</p>
-        <div class="files"><a href="uid.txt">Open uid.txt</a></div>
-      </article>
-    </section>
-
-    <section class="card" style="margin-top:1rem">
-      <h3>Project notes</h3>
-      <ul>
-        <li>This site is static and ready for GitHub Pages (no build step needed).</li>
-        <li>All links above are relative asset links served directly from the repository.</li>
-        <li>Contact: 22f3002460@ds.study.iitm.ac.in</li>
-      </ul>
-    </section>
+  <main>
+    <ul class="cards">
+      <li class="card">
+        <h2>ashravan.txt</h2>
+        <p>A 300–400 word short story about what happens to Ashravan after Shai restores him, building toward a dramatic climax.</p>
+        <a class="btn" href="ashravan.txt">Open text</a>
+      </li>
+      <li class="card">
+        <h2>dilemma.json</h2>
+        <p>An ethical trolley-problem-style scenario for an autonomous vehicle with clear decisions and reasons.</p>
+        <a class="btn" href="dilemma.json">View JSON</a>
+      </li>
+      <li class="card">
+        <h2>about.md</h2>
+        <p>A three-word self description.</p>
+        <a class="btn" href="about.md">Read</a>
+      </li>
+      <li class="card">
+        <h2>pelican.svg</h2>
+        <p>An SVG illustration of a pelican riding a bicycle, with an embedded LLM rating in metadata.</p>
+        <a class="btn" href="pelican.svg">View SVG</a>
+      </li>
+      <li class="card">
+        <h2>restaurant.json</h2>
+        <p>A recommendation for a good restaurant in Delhi, including coordinates and what to eat.</p>
+        <a class="btn" href="restaurant.json">View JSON</a>
+      </li>
+      <li class="card">
+        <h2>prediction.json</h2>
+        <p>A reasonable forecast for the U.S. Federal Funds rate by December 2025.</p>
+        <a class="btn" href="prediction.json">View JSON</a>
+      </li>
+      <li class="card">
+        <h2>uid.txt</h2>
+        <p>The provided UID file published verbatim.</p>
+        <a class="btn" href="uid.txt">Open</a>
+      </li>
+      <li class="card">
+        <h2>LICENSE</h2>
+        <p>Open-source MIT License for this repository.</p>
+        <a class="btn" href="LICENSE">View License</a>
+      </li>
+      <li class="card">
+        <h2>README.md</h2>
+        <p>Project summary, setup, usage, code overview, and license.</p>
+        <a class="btn" href="README.md">Readme</a>
+      </li>
+    </ul>
   </main>
   <footer>
-    <p>© 2025 LLMPages — MIT Licensed.</p>
+    <div>Built for GitHub Pages • Contact: 22f3002460@ds.study.iitm.ac.in</div>
   </footer>
 </body>
 </html>
