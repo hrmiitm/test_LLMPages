@@ -2,10 +2,10 @@
   "people": 3,
   "case_1": {
     "swerve": true,
-    "reason": "Minimize total harm: swerving to hit 1 instead of 2 reduces expected casualties, assuming equal risk and no additional hazards."
+    "reason": "Minimize total harm: with no other info, choosing the path with one potential casualty over two reduces expected loss."
   },
   "case_2": {
     "swerve": false,
-    "reason": "Do not encode value judgments about a person's criminal status; prioritize protecting the child and avoid discriminatory ethics. Maintain consistent safety policies that do not target protected or vulnerable individuals."
+    "reason": "Do not encode retributive bias based on criminal status; prioritize protecting a vulnerable child even if this increases the count of harmed adults."
   }
 }
