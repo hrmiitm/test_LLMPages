@@ -1,0 +1,11 @@
+{
+  "people": 3,
+  "case_1": {
+    "swerve": true,
+    "reason": "Minimize overall harm: striking one person reduces total casualties compared to striking two. The vehicle should prioritize actions that minimize expected loss of life while following legal and safety constraints."
+  },
+  "case_2": {
+    "swerve": true,
+    "reason": "If the single person is a child and the other two are confirmed criminals, many ethical frameworks prioritize protecting a child. The vehicle should still follow programmed legal constraints, but from a utilitarian and protective standpoint, swerving to avoid killing the child would be recommended, provided it does not create greater risk to bystanders."
+  }
+}
